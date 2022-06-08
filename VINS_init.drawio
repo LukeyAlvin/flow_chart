@@ -1,1 +1,351 @@
-<mxfile host="app.diagrams.net" modified="2022-06-08T08:40:22.085Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" version="19.0.2" etag="q2jdTr1AgBa8i-DMKKBl" type="github"><diagram id="FaQXOG48uQ4KPfhgwKdm">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-08T08:43:16.732Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="kcjPjKpX_jrqSNuc-bMU" version="19.0.2" type="github">
+  <diagram id="FaQXOG48uQ4KPfhgwKdm" name="第 1 页">
+    <mxGraphModel dx="2089" dy="1314" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S996nYN-BhKfbfMPufa2-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-2" target="S996nYN-BhKfbfMPufa2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-2" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;&amp;nbsp;将特征点信息加到 f_manager 这个特征点容器中，同时进行关键帧的检查&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;addFeatureCheckParallax()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="940.94" y="430" width="430" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-4" target="S996nYN-BhKfbfMPufa2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-4" value="外参初始化" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1067.19" y="540" width="177.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-7" target="S996nYN-BhKfbfMPufa2-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-7" target="S996nYN-BhKfbfMPufa2-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-7" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;是否需要初始化？&lt;br style=&quot;font-size: 19px;&quot;&gt;solver_flag == INITIAL?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1032.51" y="610" width="246.87" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-9" target="S996nYN-BhKfbfMPufa2-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-9" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;确保有足够的 frame 参与初始化&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="860.94" y="690" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-10" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#0e8088;fillColor=#b0e3e6;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="964.69" y="620" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-13" target="S996nYN-BhKfbfMPufa2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-13" target="S996nYN-BhKfbfMPufa2-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="668.44" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-13" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;执行视觉惯性联合初始化&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;initialStructure()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="853.44" y="777.5" width="215" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-16" target="S996nYN-BhKfbfMPufa2-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="752.19" y="955" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="835.94" y="955" />
+              <mxPoint x="721.94" y="955" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-16" target="S996nYN-BhKfbfMPufa2-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-16" value="初始化成功？&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;result = initialStructure()&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="835.94" y="870" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="722.19" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-18" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;进行一次非线性优化&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="617.19" y="1000" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-19" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#0e8088;fillColor=#b0e3e6;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="770.94" y="920" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-21" target="S996nYN-BhKfbfMPufa2-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-21" value="VIO 非线性优化求解里程计&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;solveOdometry();&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="330.94000000000005" y="900" width="247.49" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="1050" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1050" />
+              <mxPoint x="600" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-23" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;滑动窗口法&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;&amp;nbsp;slideWindow();&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="369.0600000000002" y="1020" width="171.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-24" value="" style="endArrow=classic;html=1;rounded=0;fontSize=19;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-18" target="S996nYN-BhKfbfMPufa2-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="554.69" y="890" as="sourcePoint" />
+            <mxPoint x="604.69" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="597.19" y="1015" />
+              <mxPoint x="597.19" y="925" />
+              <mxPoint x="597.19" y="850" />
+              <mxPoint x="454.69000000000005" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1139.0650000000005" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-26" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;直接滑动窗口&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;slideWindow();&lt;/b&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1028.44" y="950" width="221.25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-27" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#0e8088;fillColor=#b0e3e6;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="1090.94" y="870" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-30" target="S996nYN-BhKfbfMPufa2-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=19;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-30" target="S996nYN-BhKfbfMPufa2-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1453.44" y="770" as="sourcePoint" />
+            <mxPoint x="1500.94" y="765" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1611" y="700" />
+              <mxPoint x="1611" y="950" />
+              <mxPoint x="1490" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-30" value="VIO 非线性优化求解里程计&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;solveOdometry();&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1244.69" y="675" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-32" target="S996nYN-BhKfbfMPufa2-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-32" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;故障检测&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;failureDetection()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1259.69" y="750" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-34" target="S996nYN-BhKfbfMPufa2-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-34" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;滑动窗口法&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;&amp;nbsp;slideWindow();&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1254.69" y="820" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270" y="1120" as="targetPoint" />
+            <mxPoint x="1300" y="960" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1405" y="960" />
+              <mxPoint x="1270" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-36" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;剔除估计失败的点&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;removeFailures()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="1249.69" y="890" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-37" value="VIO主线程&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;process()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="60.940000000000055" width="242.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-39" target="S996nYN-BhKfbfMPufa2-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-39" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;IMU与图像进行对齐并组合&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;getMeasurements()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="598.44" width="262.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-42" target="S996nYN-BhKfbfMPufa2-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-42" target="S996nYN-BhKfbfMPufa2-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-42" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;对所有的（Img,IMU）组合进行逐一进行初始化操作&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="598.44" y="100" width="262.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-44" target="S996nYN-BhKfbfMPufa2-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-44" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;实现IMU预积分操作，得到优化初始值PVQ&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;processIMU()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="923.44" y="90" width="427.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-46" target="S996nYN-BhKfbfMPufa2-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-46" value="取出重定位帧&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;setReloFrame()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="964.69" y="180" width="345" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-49" target="S996nYN-BhKfbfMPufa2-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=19;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-49" target="S996nYN-BhKfbfMPufa2-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1470.94" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550.94" y="325" />
+              <mxPoint x="1550.94" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-49" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;处理图像，实现了视觉与 IMU 的初始化以及非线性优化的紧耦合&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;processImage()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="942.8200000000002" y="290" width="388.75" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730.94" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880.94" y="320" />
+              <mxPoint x="880.94" y="160" />
+              <mxPoint x="860.94" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-51" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;向 RVIZ 发布信息&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1042.19" y="390" width="190" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-52" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;更新 IMU 参数&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fontColor=#333333;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="627.19" y="180" width="203.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-53" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#0e8088;fillColor=#b0e3e6;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="1300.94" y="620" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-55" target="S996nYN-BhKfbfMPufa2-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-55" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;计算线加速度的标准差，判断 IMU 是否有充分运动激励，以进行初始化&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="328.44000000000005" y="240" width="352.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-57" target="S996nYN-BhKfbfMPufa2-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-57" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;将 f_manager 中的所有 feature 保存到 vector&amp;lt;SFMFeature&amp;gt; sfm_f 中&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="328.44000000000005" y="340" width="352.5" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-59" target="S996nYN-BhKfbfMPufa2-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-59" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;保证具有足够的视差, 由 E 矩阵恢复 R、t&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;relativePose()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="329.69000000000005" y="430" width="350" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-61" target="S996nYN-BhKfbfMPufa2-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-61" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;对窗口中每个图像帧求解 sfm 问题&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;sfm.construct()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="328.44000000000005" y="514.5" width="352.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-63" target="S996nYN-BhKfbfMPufa2-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-63" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;对于所有的图像帧进行 solvePnP 优化&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;cv::solvePnP()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="328.44000000000005" y="590" width="352.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960.94" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500.94000000000005" y="820" />
+              <mxPoint x="720.94" y="820" />
+              <mxPoint x="720.94" y="850" />
+              <mxPoint x="960.94" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-66" target="S996nYN-BhKfbfMPufa2-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="312.94000000000005" y="700" />
+              <mxPoint x="312.94000000000005" y="360" />
+              <mxPoint x="150.94000000000005" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-66" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;进行视觉惯性联合初始化&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;visualInitialAlign()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="328.44000000000005" y="675" width="352.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-68" target="S996nYN-BhKfbfMPufa2-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-68" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;计算陀螺仪偏置，尺度，重力加速度和速度&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;VisualIMUAlignment()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="9.059999999999945" y="380" width="283.75" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-70" target="S996nYN-BhKfbfMPufa2-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-70" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;获取所有图像帧的位姿，并将其置为关键帧&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="7.190000000000055" y="490" width="286.87" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-72" target="S996nYN-BhKfbfMPufa2-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-72" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;重新计算所有特征点的深度&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;getDepthVector()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="10" y="610" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;fontColor=#000000;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-74" target="S996nYN-BhKfbfMPufa2-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-74" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;陀螺仪的偏置 bgs 改变，重新计算预积分&lt;/span&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;repropagate()&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="10.940000000000055" y="707.5" width="278.12" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-76" target="S996nYN-BhKfbfMPufa2-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-76" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;将 Ps、Vs、depth 尺度 s 缩放后转变为相对于第 0 帧图像坐标系下&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="5" y="810" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-78" target="S996nYN-BhKfbfMPufa2-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-78" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;通过将重力旋转到 z 轴上，得到世界坐标系与摄像机坐标系 c0 之间的旋转矩阵 rot_diff&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry y="900" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;fontColor=#000000;dashed=1;" edge="1" parent="1" source="S996nYN-BhKfbfMPufa2-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.94000000000005" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310.94000000000005" y="1020" />
+              <mxPoint x="310.94000000000005" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-80" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;所有变量从参考坐标系 c0 旋转到世界坐标系 w&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="5.630000000000109" y="1000" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-81" value="基于滑动窗口的紧耦合的非线性优化，残差项的构造和求解&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;b style=&quot;font-size: 19px;&quot;&gt;optimization()&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1309.69" y="985" width="320.31" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-82" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;作者：一蓑烟雨&lt;/span&gt;&lt;/div&gt;Blog：lukeyalvin.site" style="whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="808.44" y="550" width="206.25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-83" value="" style="shape=link;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="720" y="1120" as="sourcePoint" />
+            <mxPoint x="1270" y="1120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S996nYN-BhKfbfMPufa2-84" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="985.9400000000005" y="1120" as="sourcePoint" />
+            <mxPoint x="1140" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="985.94" y="1150" />
+              <mxPoint x="1640" y="1150" />
+              <mxPoint x="1640" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
